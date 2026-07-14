@@ -11,18 +11,20 @@ InfoLang-backed storage for CrewAI's unified `Memory` system.
 
 ## Install
 
-The InfoLang Python SDK is not yet on PyPI. Until it is, install both packages from source:
+The `infolang` SDK is on PyPI. `infolang-crewai` itself isn't published yet — install it
+from GitHub:
 
 ```bash
-pip install "infolang @ git+ssh://git@github.com/InfoLang-Inc/infolang-sdk-python.git@v0.2.0"
-pip install infolang-crewai
+pip install infolang
+pip install "infolang-crewai @ git+https://github.com/InfoLang-Inc/infolang-crewai.git"
 ```
 
 For local development against this repo:
 
 ```bash
+git clone https://github.com/InfoLang-Inc/infolang-crewai.git
+cd infolang-crewai
 pip install -e ".[dev]"
-pip install -e "../sdk-python"   # editable install of the infolang SDK, for local testing only
 ```
 
 ## Quickstart
